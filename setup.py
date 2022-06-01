@@ -60,7 +60,7 @@ print(json.dumps(kernel_deps))
 
 
 # reset state
-#reset
+reset
 
 def ojs_define(**kwargs):
   import json
