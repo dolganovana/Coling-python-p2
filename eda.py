@@ -4,7 +4,7 @@ df = pd.read_csv("eda.csv")
 from typing import List
 from fastapi import FastAPI, Query
 app = FastAPI(
-    title="Recipies Dolganova"
+    title="Recipes Dolganova"
     )
 
 @app.get("/")
