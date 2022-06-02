@@ -100,7 +100,7 @@ def check_entry_points(dist, attr, value):
     """Verify that entry_points map is parseable"""
     try:
         pkg_resources.EntryPoint.parse_map(value)
-    except ValueError, e:
+    except (ValueError, e):
         raise DistutilsSetupError(e)
 
 def check_test_suite(dist, attr, value):
